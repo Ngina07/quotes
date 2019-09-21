@@ -8,13 +8,17 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-   quotes:Quote[] = [
-    {quote:"I love life", author:"Admin"},
-    {quote:"I love life", author:"Admin"},
-    {quote:"I love life", author:"Admin"},
-    {quote:"I love life", author:"Admin"},
+   quotes: Quote[] = [
+    new Quote("I love life", "Admin"),
+    new Quote("I love life", "Admin"),
+    new Quote("I love life", "Admin"),
+    new Quote("I love life", "Admin"),
   ];
-  
+
+  toggleDetails(index){
+    this.quotes[index].showDetail = !this.quotes[index].showDetail;
+  }
+
   constructor() { }
 
   ngOnInit() {

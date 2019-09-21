@@ -1,4 +1,7 @@
 export class Quote {
-    quote: string;
-    author:string;
+   showDetail: boolean
+   constructor( public quote: string,
+    public author: string){
+        this.showDetail=false;
+    }
 }
