@@ -7,14 +7,18 @@
                 <ul>
                     <li *ngFor='let myquote of quotes;let i = index'>
                         {{myquote.quote}}
-                        <button (click)='toggleDetails(i)'>Toggle Details</button>
+                        <button (click)='toggleDetails(i)'>Show Details</button>
                         <app-quote-detail *ngIf='myquote.showDetail' [quote]='myquote'
                             (isComplete)='deleteQuote($event,i)'>
                         </app-quote-detail>
+                        <app-vote></app-vote>
                     </li>
                 </ul>
             </div>
         </div>
+        <!-- <div id="votes">
+            <app-vote></app-vote>
+        </div> -->
 
     </div>
     <div class="right-half" id ="quoteform">
