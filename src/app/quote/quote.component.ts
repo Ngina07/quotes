@@ -15,6 +15,8 @@ export class QuoteComponent implements OnInit {
     new Quote(4,"I love life", "Admin", new Date(2019, 6, 17)),
   ];
 
+  // showDetail= false;
+
   toggleDetails(index){
     this.quotes[index].showDetail = !this.quotes[index].showDetail;
   }
