@@ -9,10 +9,10 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
    quotes: Quote[] = [
-    new Quote("I love life", "Admin"),
-    new Quote("I love life", "Admin"),
-    new Quote("I love life", "Admin"),
-    new Quote("I love life", "Admin"),
+    new Quote(1,"I love life", "Admin", new Date(2012, 8, 17)),
+    new Quote(2,"I love life", "Admin", new Date(2012, 8, 17)),
+    new Quote(3,"I love life", "Admin", new Date(2012, 8, 17)),
+    new Quote(4,"I love life", "Admin", new Date(2012, 8, 17)),
   ];
 
   toggleDetails(index){
@@ -27,6 +27,13 @@ export class QuoteComponent implements OnInit {
       this.quotes.splice(index,1);
       }
     }
+  }
+
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    // goal.completeDate = new Date(goal.completeDate)
+    this.quotes.push(quote)
   }
 
   constructor() { }

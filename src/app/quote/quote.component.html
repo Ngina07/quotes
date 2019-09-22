@@ -1,15 +1,23 @@
-<div>
-    <h1>QUOTES</h1>
-    <hr>
-    <ul>
-        <li *ngFor='let myquote of quotes;let i = index'>
-            {{myquote.quote}}
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail *ngIf='myquote.showDetail' [quote]='myquote' (isComplete)='deleteQuote($event,i)'>
-            </app-quote-detail>
-        </li>
-    </ul>
-</div>
-<div class="col-md-6">
-    <app-quote-form></app-quote-form>
+<div class="container-fluid" id= "home" >
+    <div>
+        <h1>QUOTES</h1>
+        <hr>
+        <div class="row">
+            <div class="left-half" id="newquotes">
+                <ul>
+                    <li *ngFor='let myquote of quotes;let i = index'>
+                        {{myquote.quote}}
+                        <button (click)='toggleDetails(i)'>Toggle Details</button>
+                        <app-quote-detail *ngIf='myquote.showDetail' [quote]='myquote'
+                            (isComplete)='deleteQuote($event,i)'>
+                        </app-quote-detail>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="right-half" id ="quoteform">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
 </div>
