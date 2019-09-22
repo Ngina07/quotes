@@ -2,33 +2,39 @@
     /* display: table; */
     /* width: 100%; */
     /* background-image: url(..assets/bg1.jpeg); */
+    /* background-image: url('/assets/images/download.jpeg'); */
+    /* background-repeat: no-repeat; */
     background-color: black;
     color: snow;
     text-align: center;
     align-content: center;
-}
-.left-half {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    }
+.right-half {
     /* background-color: #ff9e2c; */
     position: absolute;
-    left: 0px;
+    right: 0px;
     width: 50%;
     height: 100%;
-    color: black;
-    background-image: url('/assets/images/bg2.jpeg');
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(87, 60, 60, 0.8)), url('/assets/images/download.jpeg') no-repeat center center fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     
   }
   li {
     list-style-type: none;
   }
   
-.right-half {
+.left-half {
     background-color: #b6701e;
     position: absolute;
-    right: 0px;
+    left: 0px;
     width: 50%;
     height: 100%;
     text-decoration: none;
     color:black;
+    padding-top: 20px;
     
 }

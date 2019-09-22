@@ -1,9 +1,12 @@
 <div class="container-fluid" id= "home" >
     <div>
         <h1>QUOTES</h1>
+        <p style="font-size: 20px">-A fine quote is a diamond in the hand of a man of wit and a pebble in the hand of a fool.</p>
+
         <hr>
         <div class="row">
-            <div class="left-half" id="newquotes">
+            <div class="right-half" id="newquotes">
+                <h2>Quotes!</h2>
                 <ul>
                     <li *ngFor='let myquote of quotes;let i = index'>
                         {{myquote.quote}}
@@ -21,7 +24,8 @@
         </div> -->
 
     </div>
-    <div class="right-half" id ="quoteform">
+    <div class="left-half" id ="quoteform">
+            <h2>Publish a Quote</h2>
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
 </div>
