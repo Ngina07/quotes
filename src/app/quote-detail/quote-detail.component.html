@@ -1,4 +1,5 @@
 <p>
     {{quote.author}}
 </p>
-<button (click)= 'quoteDelete(true)'>Delete Quote </button>
+<p>This quote is {{quote.completeDate|dateCount}} days old</p>
+<button (click)='quoteDelete(true)'>Delete Quote </button>
