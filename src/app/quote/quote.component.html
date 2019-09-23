@@ -10,12 +10,13 @@
                 <h2>Quotes!</h2>
                 <div *ngFor='let myquote of quotes;let i = index'>
                     {{myquote.quote}}
+                    <p id= "author"><em>~{{myquote.author}}</em></p>
                     <P><button class="btn btn-info" style="color: black" (click)='toggleDetails(i)'>See More</button></P>
                     <div *ngIf='myquote.showDetail'>
                         <app-quote-detail [quote]='myquote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
                     </div>
-                    <div *ngIf="showDetail" >
+                    <div *ngIf="myquote.showDetail" >
                         <app-vote></app-vote>
                     </div>
                 </div>
