@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -6,7 +6,7 @@ import { Quote } from '../quote';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-export class QuoteComponent implements OnInit {
+export class QuoteComponent {
 
    quotes: Quote[] = [
     new Quote(1,"I love life", "Admin","Anon", new Date(2019, 5, 17)),
@@ -14,8 +14,6 @@ export class QuoteComponent implements OnInit {
     new Quote(3,"I love life", "Admin","Anon", new Date(2019, 8, 27)),
     new Quote(4,"I love life", "Admin","Anon", new Date(2019, 6, 17)),
   ];
-
-  showDetail= false;
 
     deleteQuote(isComplete, index){
     if (isComplete) {
@@ -28,10 +26,12 @@ export class QuoteComponent implements OnInit {
   }
 
   addNewQuote(quote){
+ 
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
+    console.log(quote.id)
   }
 
   toggleDetails(index){
@@ -39,8 +39,5 @@ export class QuoteComponent implements OnInit {
   }
   
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
