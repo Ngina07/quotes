@@ -9,10 +9,10 @@ import { Quote } from '../quote';
 export class QuoteComponent {
 
    quotes: Quote[] = [
-    new Quote(1,"I love life", "Admin","Anon", new Date(2019, 5, 17)),
-    new Quote(2,"I love life", "Admin","Anon", new Date(2019, 8, 7)),
-    new Quote(3,"I love life", "Admin","Anon", new Date(2019, 8, 27)),
-    new Quote(4,"I love life", "Admin","Anon", new Date(2019, 6, 17)),
+    new Quote(1,"Everything has beauty, but not everyone sees it", "Confucious","Anon", new Date(2019, 5, 17)),
+    new Quote(2,"Beauty begins the moment you decide to be yourself", "Coco Chanel","Admin", new Date(2019, 8, 7)),
+    new Quote(3,"It’s lovely to know that the world can’t interfere with the inside of your head.", "Frank McCourt","Dr.Seus", new Date(2019, 8, 27)),
+    new Quote(4,"Nobody is superior, nobody is inferior, but nobody is equal either. People are simply unique, incomparable. You are you. I am I.", "Osho","Admin", new Date(2019, 6, 17)),
   ];
 
     deleteQuote(isComplete, index){
