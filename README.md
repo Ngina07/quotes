@@ -1,27 +1,43 @@
-# Quotes
+#   QUOUTES
+#### This is a webpage that displays quotes and allows users to add their own quotes, 23/09/2019
+#### By Phillis Ngina Njoroge
+## Description
+This is a webpage that displays quotes and allows users to add their own quotes.It also allows users to upvote the quotes they like and downvote the quotes they don't.Click <a href="https://ngina07.github.io/quotes/">here</a> to access the live site on Github pages
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+## BDD
+* The user can see quotes displayed by the administrator of the webpage and the number of days since it was published.
+* The user after clicking on see more will be able to upvote,downvote and delete the quote.
+* The user can add their own quote by filling in the form provided
+* After publishing it will display on the quote section.
 
-## Development server
+## Setup/Installation Requirements
+To access this application you will require a browser and working network.
+## Known Bugs
+There are no known bugs
+## Technologies Used
+This webpage was created using Angular framework, typescript and styled using css and bootstrap
+## Support and contact details
+In the event any issue arises while using the webpage feel free to contact me through my email address, phillis.njoroge@strathmore.edu. Any and all contributions to the code are highly encouraged and appreciated 
+### License
+MIT License
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Copyright (c) [2019] [Phillis Ngina Njoroge]
 
-## Code scaffolding
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Build
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
