@@ -1,8 +1,8 @@
-#   QUOUTES
+#   QUOTES
 #### This is a webpage that displays quotes and allows users to add their own quotes, 23/09/2019
 #### By Phillis Ngina Njoroge
 ## Description
-This is a webpage that displays quotes and allows users to add their own quotes.It also allows users to upvote the quotes they like and downvote the quotes they don't.Click <a href="https://ngina07.github.io/quotes/">here</a> to access the live site on Github pages
+This is a webpage that displays quotes and allows users to add their own quotes. It also allows users to upvote the quotes they like and downvote the quotes they don't.Click <a href="https://ngina07.github.io/quotes/">here</a> to access the live site on Github pages
 
 ## BDD
 * The user can see quotes displayed by the administrator of the webpage and the number of days since it was published.
@@ -13,7 +13,7 @@ This is a webpage that displays quotes and allows users to add their own quotes.
 ## Setup/Installation Requirements
 To access this application you will require a browser and working network.
 ## Known Bugs
-There are no known bugs
+There are no known bugs.
 ## Technologies Used
 This webpage was created using Angular framework, typescript and styled using css and bootstrap
 ## Support and contact details
